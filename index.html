@@ -3,27 +3,53 @@
     <head>
         <title>Motion</title>
 		<style>
-			#container {
+			#container{
 			  width: 400px;
 			  height: 400px;
 			  position: relative;
-			  background: yellow;
+			  background: lightblue;
 			}
-			#animate {
+
+      #animate1{
 			  width: 50px;
 			  height: 50px;
+        left: 0;
 			  position: absolute;
-			  background-color: red;
-			}	
+			  background-color: orange;
+			}
+
+			#animate2{
+			  width: 50px;
+			  height: 50px;
+        right: 0;
+			  position: absolute;
+			  background-color: pink;
+			}
+
+      .orangebtn{
+        background-color: orange;
+      }
+
+      .pinkbtn{
+        background-color: pink;
+      }
+
+
 		</style>
     </head>
 
 	<body>
 		<script src="motion.js"></script>	
-		<button type="button" onclick="myMove()">Click Me</button> 
+
+		<button type="button" onclick="myMove1()" class="orangebtn">Move Orange</button>
+    <button type="button" onclick="myMove2()" class="pinkbtn">Move Pink</button>
+
 		<br><br>
+
 		<div id ="container">
-		  <div id ="animate"></div>
+      
+		  <div id="animate1"></div>
+		  <div id="animate2"></div>
 		</div>
 		
 	</body>
